@@ -31,7 +31,7 @@
   transition: background-color 0.15s;
 }
 
-.icon-name,.logo-name{
+.icon-name,.logo-name ,.last-item-name{
   display: flex;
   padding-left: 15px;
   padding-top:  5px;
@@ -46,6 +46,7 @@
 
 .insta-logo {
   opacity: 0;
+  height: 21px;
 }
 
 .sidebar-logo-container:hover, .sidebar-container:hover {
@@ -57,12 +58,11 @@
 .home ,
 .search-icon, .explorer,
 .reels, .message, .heart, .add-content,
-.analytics  {
+.analytics,.AI-img ,
+.threads-img, .menu-img  {
   height: 23px;
 }
-.insta-logo{
-  height: 21px;
-}
+
 .sidebar-profile {
   height: 25px;
   border-radius: 50px;
@@ -73,14 +73,39 @@
     width: 73px;
   }
   .sidebar-logo-container,
-  .sidebar-items .sidebar-container {
+  .sidebar-items .sidebar-container,
+  .last-container .last-item-container {
     width: 25px;
-
   }
-  .insta-logo {
+  .insta-logo, .last-item-name {
     opacity: 1;
   }
-  .icon-name, .logo-name {
+
+  .icon-name, .logo-name,.last-item-name {
     opacity: 0;
+    height: 0;
+    width: 0;
   }
+}
+
+
+.last-item-container {
+  display: flex;
+  align-items: center;
+  width: 200px;
+  height: 20px;
+  margin: 17px 17px 15px 17px;
+  padding: 10px 6px 9px 10px;
+  cursor: pointer;
+  border-radius: 7px;
+  transition: background-color 0.15s;
+}
+
+
+.last-item-container:hover{
+  background-color: rgb(240, 240, 240);
+}
+
+.last-container {
+  margin-top: 100px;
 }
