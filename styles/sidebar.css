@@ -1,0 +1,86 @@
+.sidebar {
+  background-color: rgb(255, 255, 255);
+  position: fixed;
+  width: 245px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  border-right: 1px solid rgb(230, 228, 228);
+}
+
+.sidebar-logo-container{
+  display: flex;
+  width: 200px;
+  align-items: center;
+  height: 20px;
+  margin: 30px 17px 36px 17px;
+  padding: 10px 6.5px 10px 10px;
+  cursor: pointer;
+  border-radius: 7px;
+}
+
+.sidebar-items .sidebar-container {
+  display: flex;
+  align-items: center;
+  width: 200px;
+  height: 20px;
+  margin: 17px 17px 15px 17px;
+  padding: 10px 6px 9px 10px;
+  cursor: pointer;
+  border-radius: 7px;
+  transition: background-color 0.15s;
+}
+
+.icon-name,.logo-name{
+  display: flex;
+  padding-left: 15px;
+  padding-top:  5px;
+  cursor: pointer;
+  border-radius: 5px
+}
+
+.logo-name {
+  height: 0;
+  width: 0;
+}
+
+.insta-logo {
+  opacity: 0;
+}
+
+.sidebar-logo-container:hover, .sidebar-container:hover {
+  background-color: rgb(240, 240, 240);
+}
+.logo-container{
+  margin: 30px;
+}
+.home ,
+.search-icon, .explorer,
+.reels, .message, .heart, .add-content,
+.analytics  {
+  height: 23px;
+}
+.insta-logo{
+  height: 21px;
+}
+.sidebar-profile {
+  height: 25px;
+  border-radius: 50px;
+}
+
+@media (max-width: 1263px){
+  .sidebar {
+    width: 73px;
+  }
+  .sidebar-logo-container,
+  .sidebar-items .sidebar-container {
+    width: 25px;
+
+  }
+  .insta-logo {
+    opacity: 1;
+  }
+  .icon-name, .logo-name {
+    opacity: 0;
+  }
+}

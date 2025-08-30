@@ -1,0 +1,11 @@
+@font-face {
+  font-family: 'Billabong';
+  src: url('Billabong.woff2') format('woff2'),
+      url('Billabong.woff') format('woff');
+}
+.logo-name {
+  font-family: 'Billabong', cursive;
+  font-size: 35px;
+  margin: 2px 17px 30px -30px;
+  padding: 10px 6.5px 10px 10px;
+}
