@@ -13,7 +13,7 @@
   grid-template-columns: 32px 120px 1fr 20px;
   align-items: center;
   grid-gap: 10px;
-
+  
 } 
 
 .profile-pic{
@@ -61,13 +61,64 @@
   overflow: hidden;
 }
 
-@media (max-width:768px){
-  .post-preview {
-    width: 100%;
-    border: 1px solid #dbdbdb;
-    border-radius: 8px;
-    background-color: white;
-    margin-bottom: 20px;
-    margin-left: 100px;
-  }
+.post-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 12px;
+  font-size: 20px;
+}
+
+.post-actions i {
+  margin-right: 12px;
+  cursor: pointer;
+}
+
+.left-actions {
+  display: flex;
+  gap: 12px;
+}
+
+.right-actions {
+  display: flex;
+}
+
+.post-likes,
+.post-caption,
+.post-more {
+  padding: 0 12px;
+  font-size: 14px;
+  margin: 4px 0;
+}
+
+.post-likes strong,
+.post-caption strong {
+  font-weight: bold;
+}
+
+.post-more {
+  color: #8e8e8e;
+  cursor: pointer;
+}
+
+.post-comment {
+  display: flex;
+  align-items: center;
+  padding: 8px 12px;
+  border-top: 1px solid #dbdbdb;
+}
+
+.post-comment input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+
+.post-comment button {
+  background: none;
+  border: none;
+  color: #0095f6;
+  font-weight: bold;
+  cursor: pointer;
 }

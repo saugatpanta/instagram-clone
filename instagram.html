@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
   <link rel="stylesheet" href="styles/home.css">
   <link rel="stylesheet" href="styles/general.css">
   <link rel="stylesheet" href="styles/sidebar.css">
@@ -101,53 +103,46 @@
   </header>
 
   <main>
-    <section class="post-grid">
-      <div class="post-preview">
-        <!-- post information like name stat and three dot -->
-        <div class="post-info-grid">
-          <div class="profile-pic">
-            <img class="user-profile-pic" src="assets/profiles/profile-pic.jpg" alt="">
-          </div>
-          <p class="profilename">saugatpanta__ <span> &#183;</span></p>
-          <p class="time-stat"> 3h</p>
-          <div class="more-info"> 
-            <img src="assets/icons/more (2).png" alt="" class="three-dot">
-          </div>
-        </div>
+<article class="post-preview">
+  <header class="post-info-grid">
+    <div class="profile-pic">
+      <img class="user-profile-pic" src="assets/profiles/profile-pic.jpg" alt="pic of saugatpanta__">
+    </div>
+    <p class="profilename">saugatpanta__ <span> &#183;</span></p>
+    <p class="time-stat">3h</p>
+    <div class="more-info"> 
+      <img src="assets/icons/more (2).png" alt="More options" class="three-dot">
+    </div>
+  </header>
 
-        <!-- post row -->
-        <div class="post-row">
-          <img src="assets/post-pic/saugatpanta___3461664794036615882.png" alt="" class="post">
-          <div class="next-arrow">
-            <img src="" alt="" class="arrow">
-          </div>  
-        </div>
-        
-      </div>
-    </section>
+  <div class="post-row">
+    <img src="assets/post-pic/saugatpanta___3461664794036615882.png" alt="Post by saugatpanta__" class="post">
+  </div>
 
-<!-- <section class="video-grid">
-      <div class="video-preview">
-        <div class="thumbnail-row">
-          <img src="assets/thumbnails/thumbnail-1.webp" alt="thumbnail-1" class="thumbnail">
-          <div class="video-time">
-            14:20
-          </div>
-        
-        </div>
-        <div class="video-info-grid">
-          <div class="channel-picture">
-            <img class="profile-pic" src="assets/channel-pic/channel-1.jpeg" alt="Channel-1-profile">
-          </div>
-          <div class="video-info">
-            <p class="video-title">
-            Talking Tech and AI with Google CEO Sundar Pichai!</p>
-            <p class="video-author">Marques Brownlee</p>
-            <p class="video-stats" >3.4M views &#183; 6 months ago</p>
-          </div>
-          
-        </div>
-      </div> -->
+  <div class="post-actions">
+    <div class="left-actions">
+      <i class="fa-regular fa-heart"></i>
+      <i class="fa-regular fa-comment"></i>
+      <i class="fa-regular fa-paper-plane"></i>
+    </div>
+    <div class="right-actions">
+      <i class="fa-regular fa-bookmark"></i>
+    </div>
+  </div>
+
+  <div class="post-caption">
+    <strong>saugatpanta__</strong> Last memories of class 12!❤️
+  </div>
+
+  <div class="post-more">... more</div>
+
+  <form class="post-comment">
+    <input type="text" placeholder="Add a comment..." />
+    <button type="submit">Post</button>
+  </form>
+</article>
+
+
   </main>
 </body>
 </html>
